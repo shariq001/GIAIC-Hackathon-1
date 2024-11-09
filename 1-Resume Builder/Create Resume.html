@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/343741ebda.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');</style>
+</head>
+<body style="background-color: #d5e1dc;">
+    <header style="background-color: rgb(0, 73, 0);">
+        <a href="Home.html">Home</a>
+        <a href="Resume.html">My Resume</a>
+        <a href="Create Resume.html">Create Resume</a>
+    </header>
+
+    <h1 id="create-heading">Create Your Resume</h1>
+
+    <form id="create-container">
+        <fieldset>
+            <legend><h1 class="label">Personal Information</h1></legend>
+            <div class="create-content">
+                <div class="card">
+                    <h1>Full Name</h1>
+                    <div class="card-content">
+                        <input type="text" placeholder="Enter Your Full Name" id="name" required>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h1>Resume URL</h1>
+                    <div class="card-content">
+                        <input type="text" placeholder="Enter Your Desired URL" id="username" required>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h1>Email</h1>
+                    <div class="card-content">
+                        <input type="email" placeholder="Enter Your Email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h1>Phone</h1>
+                    <div class="card-content">
+                        <input type="tel" placeholder="Enter Your Phone" id="phone" required>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h1>Physical Address</h1>
+                    <div class="card-content">
+                        <textarea placeholder="Enter Your Full Address" id="address" required></textarea>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h1>About Me</h1>
+                    <div class="card-content">
+                        <textarea placeholder="Enter About Yourself" id="about"></textarea>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h1 class="label">Education & Skills</h1></legend>
+            <div class="create-content education-section">
+                <div class="card">
+                    <h1>Education</h1>
+                    <div class="card-content">
+                        <textarea placeholder="Enter Your Education" id="education"></textarea>
+                    </div>
+                </div>
+
+                <div class="card" style="display: none;" id="skills-section">
+                    <h1>Skills</h1>
+                    <div class="card-content">
+                        <textarea placeholder="Enter Your Skills" id="skill"></textarea>
+                    </div>
+                </div>
+
+                <div class="btn-div" id="skills-div">
+                    <h3>Do you want to add Skills Section?</h3>
+                    <button class="add-btn" id="skills-btn" onclick="Display()"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h1 class="label">Job Title & Experience</h1></legend>
+            <div class="create-content">
+                <div class="card">
+                    <h1>Job Title</h1>
+                    <div class="card-content">
+                        <input type="text" placeholder="Enter your Job Title" id="job-title">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h1>Experience</h1>
+                    <div class="card-content">
+                        <textarea placeholder="Enter your Expreience Here" id="experience"></textarea>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="download-div">
+            <button type="submit" class="download" id="generate-btn">GENERATE RESUME</button>
+        </div>
+    </form>
+
+    <div id="resume-output">
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
