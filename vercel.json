@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/Home.html" },
+      { "source": "/Resume", "destination": "/Resume.html" },
+      { "source": "/Create Resume", "destination": "/Create Resume.html" }
+    ],
+    "static": {
+      "include": [
+        "*.js",
+        "*.css",
+        "*.pdf"
+      ]
+    }
+  }
