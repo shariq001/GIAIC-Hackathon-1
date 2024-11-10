@@ -1,4 +1,4 @@
-# Editable Resume Builder - GIAIC Hackathon-1
+# Editable Resume Builder - GIAIC Hackathon-1 - Muhammad Shariq
 This is the Editable Resume Builder project, created as part of the first GIAIC hackathon. Built using only HTML, CSS, and TypeScript, this fully responsive application allows users to generate and edit resumes dynamically.
 
 ## Features
