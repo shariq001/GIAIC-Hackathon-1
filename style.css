@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: #000;
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content1 {
+    width: 500px;
+    height: 100px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 100px  yellow;
+    border-radius: 15px;
+    gap: 50px;
+}
+
+.btn1 {
+    background: #ffd700;
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn1:hover {
+    background: #000;
+    border: 2px solid yellow;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+/* ---------------------------------------------------------- */
+
+/* View Resume Page */
+
+header {
+    background: #008080;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* View Resume Page */
+
+h1, h2, h3 {
+    font-family: "PT Serif", serif;
+}
+.grey {
+    color: grey;
+}
+h2, p, li, a {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    color: black;
+}
+
+
+#resume1 {
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+    margin-top: 34px;
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+
+#resume2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+#resume2-left {
+    width: 50vw;
+    margin: 30px;
+    margin-top: 0;
+}
+
+.resume2-divs {
+    margin: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a, li,  i {
+    margin-right: 10px;
+}
+
+#links {
+    display: flex; justify-content: center;
+}
+
+#resume2-right {
+    width: 50vw;
+    margin-top: 0;
+}
+
+.work {
+    margin: 20px;
+}
+
+button {
+    display:  block; margin: 50px auto; width: fit-content; border: 2px solid #ffd700; padding: 5px 30px; border-radius: 15px; text-decoration: none; color: white; background: #000; font-size: 17px; transition: 0.5s;
+}
+
+button:hover {
+    transition: 0.5s;
+    background: #ffd700;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 50px;
+    cursor: pointer;
+}
+
+.download {
+    display:  block; margin: 50px auto; width: fit-content; border: 2px solid #ffd700; padding: 5px 30px; border-radius: 15px; text-decoration: none; color: white; background: #000; font-size: 17px; transition: 0.5s;
+}
+
+.download:hover {
+    transition: 0.5s;
+    background: #ffd700;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 50px;
+    cursor: pointer;
+}
+
+.download-div {
+    display: flex;
+    justify-content: center;
+}
+
+.certificates {
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Create Resume Page */
+
+fieldset {
+    margin: 50px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+legend {
+    text-align: center;
+}
+
+#create-heading {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.label {
+    text-align: center;
+    color: darkgreen;
+    margin-top: 20px;
+}
+
+.create-content {
+    margin: 30px;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #6e8f6d; 
+    width: 350px;
+    height: 180px;
+    margin: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.card h1 {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.card-content {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    background: white;
+    bottom: 0;
+    border-radius: 50px 50px 20px 20px;
+}
+
+.card-content input, textarea {
+    margin: 40px 25px;
+    width: 300px;
+    outline: none;
+    height: 40px;
+    color: black;
+    padding: 10px;
+    background: #f6f6f6;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-btn {
+    font-size: 30px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    margin: 8px;
+    background: rgb(220, 212, 212);
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 8px;
+    padding-right: 0px;
+}
+.add-btn:hover {
+    font-size: 35px;
+    height: 55px;
+    transition: 0.3s;
+    padding-left: 8px;
+    padding-right: 0;
+    background: rgb(220, 212, 212);
+}
+
+.education-section { 
+    justify-content: center; 
+}
+
+.btn-div {
+    background: #6e8f6d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 180px;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+/* ----------------------------------------------------- */
+
+/* View Resume Page */
+
+#resume-output {
+    background: white;
+    padding: 50px;
+}
+
+#resume-output h1, h2, h3 {
+    font-family: "PT Serif", serif;
+}
+
+
+/* Media Query */
+
+@media (max-width: 500px) {
+    header {
+        width: 100% !important;
+    }
+    header a {
+        font-size: 15px;
+        gap: 10px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    #resume1 h1 {
+        font-size: 25px;
+    }
+
+    #resume2 {
+        flex-direction: column;
+        margin: 10px;
+    }
+    #resume2-right {
+        width: 100%;
+        margin: 15px;
+    }
+    #resume2-right h1 {
+        text-align: center;
+        padding: 25px;
+    }
+    #resume2-left {
+        width: 100%;
+        margin: 5px;
+    }
+    #resume2-left h1 {
+        text-align: center;
+    }
+    .resume2-divs {
+        width: 90%;
+        margin: 0px;
+    }
+    h2, p, li, a {
+        font-size: 17px;
+        word-spacing: 0px;
+    }
+    .certificates {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .certificates h1 {
+        text-align: center;
+    }
+
+    /* Home Page */
+
+    #content1 {
+        flex-direction: column;
+        height: 300px;
+        width: 300px;
+        gap: 0;
+        justify-content: center;
+    }
+
+    /* Create Page */
+
+    #create-heading {
+        font-size: 25px;
+    }
+
+    fieldset {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .label {
+        font-size: 20px;
+    }
+    .create-content {
+        margin: 10px;
+    }
+    .card {
+        width: 300px;
+        margin: 10px;
+    }
+    .card h1 {
+        font-size: 20px;
+    }
+    .card-content {
+        width: 300px;
+    }
+    .card-content input, textarea {
+        width: 250px;
+    }
+
+    .btn-div {
+        height: 250px;
+    }
+    .add-btn {
+        margin: 10px;
+    }
+}
